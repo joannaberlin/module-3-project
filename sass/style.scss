@@ -24,10 +24,6 @@ body {
 	line-height: 1.7;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 a {
 	text-decoration: none;
 }
@@ -255,4 +251,43 @@ a {
 .links-footer {
     display: flex;
     padding-left: 90px;
+}
+
+@media (max-width: 1200px){
+    .top-nav img {
+        margin: 5px 0 0 10px;
+    }
+
+    .top-nav a {
+        padding: 0 5px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        padding: 20px 20px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-details {
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+       width: 100vw;
+    }
+
+    .footer-wrapper {
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .portfolio-item img {
+        width: 220px;
+    }
 }
