@@ -1,6 +1,7 @@
 /* Variables */
 
 $color-text-light: #ffffff;
+$color-text-dark: #000000;
 $color-one: #fed136;
 $color-two: #f7f7f7;
 $font-text: "Arial", "Helvetica", sans-serif;
@@ -29,7 +30,6 @@ html {
 
 a {
 	text-decoration: none;
-	color: $color-text-light;
 }
 
 .container {
@@ -49,6 +49,7 @@ a {
 	border-style: none;
 	background-color: $color-one;
 	background-position: 100% 0;
+    color: $color-text-light;
 }
 
 .header-title {
@@ -143,6 +144,10 @@ a {
 .nav-links {
     position: absolute;
     padding: 20px 200px 0 0;
+    
+    a {
+        color: $color-text-light;
+    }
 }
 
 /* Services */ 
@@ -204,4 +209,50 @@ a {
 
 .title-services {
     padding-bottom: 40px;
+}
+
+/* Footer */ 
+
+.footer-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 16%;
+    padding-top: 14px;
+}
+
+.footer-wrapper li {
+    display: inline-block;
+}
+
+.footer-wrapper i {
+    color: $color-text-light;
+    font-size: 24px;
+    width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	text-align: center;
+    background-color: $color-text-dark;
+    padding-top: 10px;
+    margin-right: 7px;
+}
+
+.footer-wrapper p {
+    font-size: 16px;
+    font-family: $font-text;
+    padding-top: 9px;
+}
+
+.footer-wrapper img {
+    width: 45px;
+    margin-top: 15px;
+    margin-left: 3px;
+}
+
+.link-fa {
+ padding-bottom: 40px;
+}
+
+.links-footer {
+    display: flex;
+    padding-left: 90px;
 }
